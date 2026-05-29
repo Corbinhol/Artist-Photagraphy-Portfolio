@@ -1,5 +1,7 @@
 # Artist / Photography Portfolio
 
+![Preview of website](./preview.png)
+
 A clean, responsive single-page portfolio template for photographers and visual artists. Built with plain HTML, Tailwind CSS, and vanilla JavaScript — no framework, no build step beyond compiling Tailwind.
 
 The layout pairs a sticky profile/bio sidebar with a fluid auto-fitting image grid, and each piece opens in a full-screen lightbox with a title, year, and description.
