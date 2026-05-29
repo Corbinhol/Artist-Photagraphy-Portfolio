@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+* {
+    font-family: "Sour Gummy", sans-serif;
+    @apply scroll-smooth;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    @apply text-white;
+}
+
+p, a {
+    @apply text-xl 
+    md:text-3xl
+    2xl:text-2xl
+    max-w-[75ch]
+    ;
+}
+
+h1 {
+    @apply text-4xl font-bold
+    md:text-5xl
+    2xl:text-4xl
+    ;
+}
+
+h2 {
+    @apply text-base
+}
+
+.locked {
+    @apply overflow-hidden
+}
+
+.social-icons svg {
+    @apply fill-white w-10 h-10
+    sm:w-13 sm:h-13
+    2xl:w-10 2xl:h-10
+    hover:fill-green-400
+    transition-colors
+    duration-200
+    ;
+}
+
+button {
+    @apply hover:cursor-pointer
+}
+
+.text-border {
+  color: white;
+  text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
+}
+
+
+.image {
+    @apply flex w-fit
+}
+
+.full-dim {
+    @apply w-full h-full absolute top-0 left-0 z-[1] content-['_'] bg-black opacity-0 transition-opacity duration-200
+}
+
+.image:hover .full-dim {
+    @apply opacity-70
+}
+
+.image:hover .heading {
+    @apply bottom-5
+}
+
+.active {
+    @apply !block
+}
+
+.visible {
+    @apply !opacity-100 top-0
+}
+
+.kinda-visible {
+    @apply !bg-black/70 !opacity-100
+}
+
+input, textarea {
+    @apply bg-white py-1 px-1 w-full rounded-md 2xl:text-3xl
+}
+
+
+
+.input-container {
+    @apply flex flex-col w-full gap-1 px-2
+}

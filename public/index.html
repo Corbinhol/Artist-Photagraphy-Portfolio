@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="locked flex flex-col items-center 2xl:flex-row-reverse 2xl:items-start">
+    <div class="overflow-hidden fixed top-[-10px] left-[-10px] w-[110%] h-[110%] z-[-1]">
+        <img src="./images/background.png" alt="background image" class="overflow-hidden w-full h-[120vh] absolute z-[-1] object-cover blur-sm">
+        <div class="absolute top-0 left-0 z-[-1] w-[100%] h-[100%] content-['_'] bg-black opacity-50"></div>
+    </div>
+    <header class="relative flex flex-col items-center w-full h-fit 2xl:h-screen 2xl:max-w-[30%]">
+        <div class="relative w-full">
+            <div class="absolute top-0 left-0 z-[-1] w-full h-full content-['_'] bg-black opacity-70"></div>
+            <div class="flex items-center justify-center gap-3 2xl:gap-3 relative py-10 md:py-15 2xl:pt-30 2xl:flex-col w-full">
+                <img src="./images/profile.jpg" alt="image of eva" class="object-cover rounded-full w-20 h-20 sm:w-30 sm:h-30 md:w-35 md:h-35 2xl:w-40 2xl:h-40">
+                <div class="text-2xl flex flex-col items-center">
+                    <h1 class="text-white text-border">Jane Smith</h1>
+                    <h2>Commercial Photographer</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col items-center ">
+            <p class="w-[80%] text-center my-5 md:my-10">Inc'm Jane Smith, a professional photographer specializing in portraiture, editorial, and fine art work. I'm drawn to natural light and the unguarded moment, and I love putting people at ease to capture the personality behind every frame. When I'm not behind the camera, you'll find me scouting locations, experimenting with film, or teaching workshops—because I believe the best photographs come from genuine connection.</p>
+            <div class="social-icons flex gap-5">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+            </div>
+        </div>
+        
+        <a href="#main" class="mt-8 !max-w-full w-full text-2xl flex flex-col items-center text-white fill-white py-10 relative 2xl:hidden">See My Work <span><svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span><span class="w-full h-full absolute top-0 left-0 z-[-1] content-['_'] bg-black opacity-70"></span></a>
+        <div class="hidden 2xl:inline-block w-full h-full mt-10 z-[-1] content-['_'] bg-black opacity-70"></div>
+    </header>
+    <main id="main" class="no-scrollbar relative min-h-screen w-full 2xl:max-h-screen 2xl:overflow-scroll grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] lg:grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))] 2xl:grid-cols-[repeat(auto-fit,_minmax(120,_1fr))]">
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=1" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=2" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=3" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=4" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=5" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=6" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=7" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=8" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=9" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=10" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=11" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=12" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=13" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=14" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=15" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=16" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=17" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=18" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=19" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=20" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=21" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=22" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=23" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=24" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=25" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=26" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=27" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=28" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=29" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=30" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=31" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=32" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=33" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=34" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=35" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=36" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=37" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=38" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=39" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=40" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=41" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=42" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=43" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=44" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=45" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=46" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=47" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=48" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=49" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=50" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=51" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=52" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=53" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=54" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=55" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=56" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=57" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=58" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=59" alt="drawing" class="">
+        </button>
+        <button class="image overflow-hidden relative width:full">
+            <div class="full-dim"></div>
+            <div class="heading transition-all  absolute z-2 bottom-[-8em] left-5 text-left">
+                <h3 class="text-4xl font-bold">Brand Mark</h3>
+                <p>2025</p>
+            </div>
+            <img src="https://picsum.photos/800/800?random=60" alt="drawing" class="">
+        </button>
+        
+        <div class="image-preview-dialogue fixed top-0 left-0 z-3 w-full 2xl:w-[70%] h-full hidden">
+            <div class="relative w-full h-full">
+                <div class="image-overlay transition-all absolute delay-100 duration-400 opacity-0 hidden top-20 left-0 z-3 w-full h-full">
+                    <button class="absolute w-10 h-10 z-3 top-10 right-10" id="preview-close">
+                    <svg class="opacity-100 w-10 h-10 transition-colors fill-white hover:fill-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+                    </button> 
+                    <div class="transition-all absolute z-3 text-left bottom-8 left-8">
+                        <h3 class="text-4xl font-bold">Brand Mark</h3>
+                        <p>2025</p>
+                    </div>
+                    <div class="flex flex-col w-full items-center justify-center z-3 gap-6 absolute bottom-[28%]">
+                        <img id="preview-img" src="https://picsum.photos/800/800?random=1" alt="drawing" class="w-64 h-64 md:w-80 md:h-80 2xl:w-100 2xl:h-100 object-contain drop-shadow-lg/50">
+                        <p class="!text-lg md:!text-xl 2xl:!text-2xl text-center !text-gray-300 line-clamp-3 w-[90%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum obcaecati similique earum commodi alias architecto quisquam perferendis? Voluptate, praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum obcaecati similique earum commodi alias architecto quisquam perferendis? Voluptate, praesentium.</p> 
+                    </div>
+                </div>
+                <div class="image-overlay-back transition-all delay-100 duration-400 absolute hidden top-0 left-0 z-2 w-full h-full content-['_'] backdrop-blur-sm opacity-0"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
